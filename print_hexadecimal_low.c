@@ -4,7 +4,7 @@
  * print_hexadecimal_low - Print a number in hexadecimal format
  * @list: Number to print
  *
- * Return: Length of the number
+ * Return: Length
  **/
 int print_hexadecimal_low(va_list list)
 {
