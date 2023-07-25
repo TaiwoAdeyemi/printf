@@ -18,7 +18,7 @@ int handler(const char *str, va_list list)
 
 		if (str[i] == '%')
 		{
-			aux = percent_handler(str, list, &i)
+			aux = percent_handler(str, list, &i);
 			if (aux == -1)
 			{
 				return (-1);
@@ -45,7 +45,8 @@ int percent_handler(const char *str, va_list list, int *i)
 	int size, j, number_formats;
 	format formats[] = {
 		{'s', print_string}, {'c', print_char}
-	}
+	};
+
 	*i = *i + 1;
 
 	if (str[*i] == '\0')
