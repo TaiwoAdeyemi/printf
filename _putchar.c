@@ -27,7 +27,7 @@ int buffer(char c)
 
 	if (c == -1 || i == 1024)
 	{
-		writ(1, buffering, i);
+		write(1, buffering, i);
 		i = 0;
 	}
 
