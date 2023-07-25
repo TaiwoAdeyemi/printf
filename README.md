@@ -1,1 +1,1 @@
-Education is when you read the fine print. Experience is what you get if you don't
+Print is the sharpest and the strongest weapon of our party
