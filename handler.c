@@ -48,7 +48,7 @@ int percent_handler(const char *str, va_list list, int *i)
 		{'d', print_integer}, {'i', print_integer},
 		{'b', print_binary}, {'o', print_octal},
 		{'x', print_hexadecimal_low}, {'X', print_hexadecimal_upp},
-		{'u', print_unsigned}
+		{'u', print_unsigned}, {'p', print_pointer}
 	};
 
 	*i = *i + 1;
