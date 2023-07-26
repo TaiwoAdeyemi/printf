@@ -17,7 +17,7 @@ int  print_rev_string(va_list list)
 	size = _strlen(str);
 
 	for (i = size - 1; i >= 0; i--)
-		_putchar()str[i];
+		_putchar(str[i]);
 
 	return (size);
 }

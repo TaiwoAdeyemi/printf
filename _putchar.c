@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
+ * _putchar - character c to stdout
  * @c: the character to print
- *
  * Return: on success 1.
- * on error, -1 is returned, and errno is set appropriately.
+ * on error, -1 is returned, and error.
  */
 
 int _putchar(char c)
@@ -14,7 +13,7 @@ int _putchar(char c)
 }
 
 /**
- * buffer - save the character in a buffer
+ * buffer - save the character
  * @c: character
  *
  * Return: 1
@@ -22,17 +21,17 @@ int _putchar(char c)
 
 int buffer(char c)
 {
-	static char buffering[1024];
-	static int i;
+	static char buffers[1024];
+	static int index;
 
-	if (c == -1 || i == 1024)
+	if (c == -1 || index == 1024)
 	{
-		write(1, buffering, i);
-		i = 0;
+		write(1, buffers, index);
+		index = 0;
 	}
 
 	if (c != -1)
-		buffering[i++] = c;
+		buffers[index++] = c;
 
 	return (1);
 }

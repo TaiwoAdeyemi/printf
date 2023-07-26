@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * handler - Format controller
+ * handler - Format
  * @str: String format
  * @list: List of arguments
  *
- * Return: Total size of arguments with the total size of the base string
+ * Return: Total size of arguments
  **/
 int handler(const char *str, va_list list)
 {
-	int size, i, aux;
+	int x, i, aux;
 
-	size = 0;
+	x = 0;
 
 	for (i = 0; str[i] != 0; i++)
 	{
@@ -23,19 +23,19 @@ int handler(const char *str, va_list list)
 			{
 				return (-1);
 			}
-			size += aux;
+			x += aux;
 			continue;
 		}
 		_putchar(str[i]);
-		size = size + 1;
+		x = x + 1;
 	}
-	return (size);
+	return (x);
 }
 
 /**
- * percent_handler - Controller for percent format
- * @str: String format
- * @list: List of arguments
+ * percent_handler - Controller
+ * @str: String
+ * @list: List
  * @i: Iterator
  *
  * Return: Size of the numbers of elements printed
